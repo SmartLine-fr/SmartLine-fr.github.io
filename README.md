@@ -168,3 +168,13 @@ Lycée LaSalle Passy Buzenval — Rueil-Malmaison, Île-de-France
 ---
 
 *Projet académique réalisé à des fins éducatives — OSI 2026*
+
+---
+
+## Soutiens & Partenaires
+
+| Partenaire | Type | Représentant |
+|---|---|---|
+| **Brinect SAS** | Partenaire officiel — autorisation logo signée | Annabella Stankovic, Présidente |
+| **Transdev Group** | Soutien institutionnel — Direction Innovation | Endorsement moral |
+
