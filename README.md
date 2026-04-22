@@ -88,18 +88,26 @@ Panneau solaire ──► Batterie ──► Régulateur ──► Arduino + Mot
 
 ## Prototype
 
-Le prototype intègre :
+Le projet comprend **2 modules prototypes** identiques, chacun intégrant :
 
-| Composant | Rôle |
+| Composant | Détail |
 |---|---|
-| Microcontrôleur Arduino | Logique centrale de commande |
-| Capteurs ultrasons | Détection densité de trafic |
-| Moteurs de déplacement | Actionnement des blocs modulables |
-| Écrans LCD | Affichage état du système |
-| Bandeaux LED | Signalisation usagers |
-| Caméra | Supervision en temps réel |
-| Panneau solaire + batterie | Autonomie énergétique |
-| Application mobile | Suivi données en temps réel |
+| Microcontrôleur | Arduino Mega |
+| Motorisation principale | 2 moteurs DC — propulsion 4 roues (2 motorisées) |
+| Système de descente | Moteur pas-à-pas + vis sans fin → abaissement du plateau |
+| Capteurs trafic | 4 capteurs ultrason par module |
+| Signalisation | 2 LEDs par module |
+| Driver moteur | L298N (commande moteurs DC + pas-à-pas) |
+| Alimentation | Panneau solaire intégré au-dessus du module |
+| Vision IA | Caméra + traitement IA — détection perturbation du trafic |
+
+### Fonctionnement mécanique
+
+Chaque module repose sur **4 roues**, dont 2 motorisées par des moteurs DC pour assurer le déplacement latéral sur la chaussée. Un **moteur pas-à-pas** actionne une **vis sans fin** reliée à un plateau : ce mécanisme permet d'abaisser le module au niveau de la route pour le faire rouler, puis de le remonter une fois en position.
+
+### Vision IA
+
+Une caméra équipée d'un modèle d'intelligence artificielle analyse le trafic en temps réel des deux côtés de l'axe routier. Elle notifie le système dès qu'une perturbation ou un déséquilibre de trafic est détecté, déclenchant la procédure de reconfiguration.
 
 ---
 
