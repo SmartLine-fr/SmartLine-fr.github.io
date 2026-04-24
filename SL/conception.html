@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conception — SmartLine</title>
+  <link rel="icon" type="image/png" href="assets/icon.png"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="splash">
+  <div class="sp-logo"><img src="assets/logo.png" alt="SmartLine"/><span>SmartLine</span></div>
+  <div class="sp-sub">La route intelligente de demain</div>
+  <div class="sp-bar"><div class="sp-fill"></div></div>
+</div>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="SmartLine"/></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="conception.html">Conception</a></li>
+      <li><a href="vision.html">Vision</a></li>
+      <li><a href="equipe.html">Équipe</a></li>
+      <li><a href="soutien.html">Soutiens</a></li>
+      <li><a href="https://github.com/SmartLine-fr/SmartLine" target="_blank" class="nav-cta">GitHub →</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-drawer">
+  <a href="index.html">Accueil</a>
+  <a href="conception.html">Conception</a>
+  <a href="vision.html">Vision</a>
+  <a href="equipe.html">Équipe</a>
+  <a href="soutien.html">Soutiens</a>
+  <a href="https://github.com/SmartLine-fr/SmartLine" target="_blank" class="mobile-drawer-btn">Voir sur GitHub →</a>
+</div>
+<div class="page-hdr">
+  <div class="eyebrow">Technique</div>
+  <h1>La <em>Conception</em></h1>
+  <p>Architecture système, fonctionnement des blocs modulables et choix techniques du projet SmartLine.</p>
+</div>
+<section><div class="prose">
+  <h2>Problématique</h2>
+  <p>Dans quelle mesure la transformation des terre-pleins centraux en infrastructures connectées permet-elle de <strong>réduire la congestion</strong>, d'augmenter le débit et d'améliorer la sécurité routière ?</p>
+  <h2>Principe des blocs modulables</h2>
+  <p>Les terre-pleins fixes sont remplacés par des blocs motorisés autonomes qui se déplacent latéralement pour libérer ou occuper une voie selon l'analyse du trafic en temps réel.</p>
+  <ul>
+    <li>Détection de la densité de trafic par capteurs ultrasons</li>
+    <li>Analyse et décision par microcontrôleur Arduino</li>
+    <li>Commande des moteurs de déplacement des blocs</li>
+    <li>Confirmation visuelle via écrans LCD et bandeaux LED</li>
+    <li>Supervision en direct par caméra embarquée</li>
+  </ul>
+  <h2>Chaîne d'information</h2>
+  <div class="code-block">Capteurs ultrasons → Arduino → Traitement logique
+                       ↓
+   Moteurs + Affichage LCD/LED + Application mobile</div>
+  <h2>Chaîne d'énergie</h2>
+  <div class="code-block">Panneau solaire → Batterie → Régulateur → Arduino + Moteurs</div>
+  <h2>Les 2 modules prototypes</h2>
+  <p>Le projet comprend <strong>2 modules identiques</strong>, conçus pour se déplacer de façon autonome sur la chaussée et reconfigurer les voies en temps réel.</p>
+
+  <h2>Motorisation & mécanique</h2>
+  <ul>
+    <li>4 roues par module, dont 2 motorisées par des <strong>moteurs DC</strong></li>
+    <li>Déplacement latéral sur la chaussée piloté par les moteurs DC</li>
+    <li><strong>Moteur pas-à-pas + vis sans fin</strong> pour abaisser/remonter le plateau</li>
+    <li>Le plateau descend pour poser les roues sur la route, remonte pour verrouiller le module en position</li>
+    <li>Driver moteur <strong>L298N</strong> pour la commande des moteurs DC et pas-à-pas</li>
+  </ul>
+
+  <h2>Électronique embarquée</h2>
+  <ul>
+    <li><strong>Arduino Mega</strong> — microcontrôleur central de chaque module</li>
+    <li><strong>4 capteurs ultrason</strong> par module — mesure de la densité de trafic</li>
+    <li><strong>2 LEDs</strong> par module — signalisation visuelle</li>
+    <li><strong>Panneau solaire</strong> intégré au-dessus — alimentation autonome</li>
+  </ul>
+
+  <h2>Vision IA</h2>
+  <p>Une <strong>caméra équipée d'un modèle d'intelligence artificielle</strong> analyse le trafic en temps réel des deux côtés de l'axe routier. Elle détecte automatiquement les perturbations et déséquilibres de trafic, et notifie le système pour déclencher la reconfiguration des modules.</p>
+
+  <h2>Conception 3D — CAO</h2>
+  <p>Modélisation sous <strong>Fusion 360</strong> puis impression 3D. La maquette reproduit un tronçon à 4 voies avec les deux modules de terre-plein intégrés.</p>
+
+  <h2>Diagrammes SysML</h2>
+  <p>L'architecture fonctionnelle et structurelle est documentée via des diagrammes SysML disponibles dans le dossier Documentation du repo GitHub.</p>
+  <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:2.5rem">
+    <a href="https://github.com/SmartLine-fr/SmartLine/tree/main/CAO" class="btn btn-p" target="_blank">Fichiers CAO →</a>
+    <a href="https://github.com/SmartLine-fr/SmartLine/tree/main/Code" class="btn btn-s" target="_blank">Code Arduino</a>
+  </div>
+</div></section>
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo"><img src="assets/logo.png" alt="SmartLine"/></div>
+      <div class="footer-tag">La route intelligente de demain · OSI 2026</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="conception.html">Conception</a>
+      <a href="vision.html">Vision</a>
+      <a href="equipe.html">Équipe</a>
+      <a href="https://github.com/SmartLine-fr/SmartLine" target="_blank">GitHub</a>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <span>© 2026 SmartLine · Lycée LaSalle Passy Buzenval, Rueil-Malmaison</span>
+    <span>Olympiades des Sciences de l'Ingénieur 2026</span>
+  </div>
+</footer>
+<script src="nav.js"></script>
+</body>
+</html>
