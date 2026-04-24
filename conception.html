@@ -2,34 +2,57 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8"/>
+  <link rel="icon" type="image/png" href="assets/icon.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Conception — SmartLine</title>
+  <link rel="icon" type="image/png" href="assets/icon.png"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+<div id="splash">
+  <div class="sp-logo"><img src="assets/icon.png" alt=""/><span>SmartLine</span></div>
+  <div class="sp-tagline">La route intelligente de demain</div>
+  <div class="sp-bar"><div class="sp-fill"></div></div>
+</div>
+
+<div id="splash">
+  <div class="sp-logo"><img src="assets/icon.png" alt=""/><span>SmartLine</span></div>
+  <div class="sp-tagline">La route intelligente de demain</div>
+  <div class="sp-bar"><div class="sp-fill"></div></div>
+</div>
+<div id="splash">
+  <div class="splash-logo">
+    <img src="assets/icon.png" alt="SmartLine"/>
+    <span>SmartLine</span>
+  </div>
+  <div class="splash-bar"><div class="splash-bar-fill"></div></div>
+</div>
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="SmartLine"/></a>
+    <a href="index.html" class="nav-brand">
+      <img src="assets/icon.png" alt="SmartLine"/>
+      <span class="nav-brand-name">SmartLine</span>
+    </a>
     <ul class="nav-links">
       <li><a href="index.html">Accueil</a></li>
       <li><a href="conception.html">Conception</a></li>
       <li><a href="vision.html">Vision</a></li>
       <li><a href="equipe.html">Équipe</a></li>
       <li><a href="soutien.html">Soutiens</a></li>
-      <li><a href="https://github.com/SmartLine-fr/SmartLine" target="_blank" class="nav-cta">GitHub →</a></li>
+      <li><a href="https://github.com/SmartLine-fr/SmartLine" target="_blank" class="nav-gh">GitHub →</a></li>
     </ul>
-    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
-<div class="mobile-drawer">
+<div class="drawer">
   <a href="index.html">Accueil</a>
   <a href="conception.html">Conception</a>
   <a href="vision.html">Vision</a>
   <a href="equipe.html">Équipe</a>
   <a href="soutien.html">Soutiens</a>
-  <a href="https://github.com/SmartLine-fr/SmartLine" target="_blank" class="mobile-drawer-btn">Voir sur GitHub →</a>
+  <a href="https://github.com/SmartLine-fr/SmartLine" target="_blank" class="drawer-cta">Voir sur GitHub →</a>
 </div>
-<div class="page-hdr">
+<div class="phdr">
   <div class="eyebrow">Technique</div>
   <h1>La <em>Conception</em></h1>
   <p>Architecture système, fonctionnement des blocs modulables et choix techniques du projet SmartLine.</p>
@@ -47,11 +70,11 @@
     <li>Supervision en direct par caméra embarquée</li>
   </ul>
   <h2>Chaîne d'information</h2>
-  <div class="code-block">Capteurs ultrasons → Arduino → Traitement logique
+  <div class="code-b">Capteurs ultrasons → Arduino → Traitement logique
                        ↓
    Moteurs + Affichage LCD/LED + Application mobile</div>
   <h2>Chaîne d'énergie</h2>
-  <div class="code-block">Panneau solaire → Batterie → Régulateur → Arduino + Moteurs</div>
+  <div class="code-b">Panneau solaire → Batterie → Régulateur → Arduino + Moteurs</div>
   <h2>Les 2 modules prototypes</h2>
   <p>Le projet comprend <strong>2 modules identiques</strong>, conçus pour se déplacer de façon autonome sur la chaussée et reconfigurer les voies en temps réel.</p>
 
@@ -86,20 +109,21 @@
   </div>
 </div></section>
 <footer>
-  <div class="footer-top">
+  <div class="ft">
     <div>
-      <div class="footer-logo"><img src="assets/logo.png" alt="SmartLine"/></div>
-      <div class="footer-tag">La route intelligente de demain · OSI 2026</div>
+      <div class="fbrand"><img src="assets/icon.png" alt="SmartLine"/><span class="fbrand-name">SmartLine</span></div>
+      <div class="ftag">La route intelligente de demain · OSI 2026</div>
     </div>
-    <div class="footer-links">
+    <div class="flinks">
       <a href="index.html">Accueil</a>
       <a href="conception.html">Conception</a>
       <a href="vision.html">Vision</a>
       <a href="equipe.html">Équipe</a>
+      <a href="soutien.html">Soutiens</a>
       <a href="https://github.com/SmartLine-fr/SmartLine" target="_blank">GitHub</a>
     </div>
   </div>
-  <div class="footer-bot">
+  <div class="fbot">
     <span>© 2026 SmartLine · Lycée LaSalle Passy Buzenval, Rueil-Malmaison</span>
     <span>Olympiades des Sciences de l'Ingénieur 2026</span>
   </div>
