@@ -3,31 +3,16 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SmartLine — La route intelligente de demain</title>
-  <meta name="description" content="SmartLine transforme les terre-pleins centraux en infrastructures connectées pour fluidifier le trafic urbain. Projet OSI 2026."/>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
   <link rel="stylesheet" href="style.css"/>
+  <title>SmartLine — La route intelligente de demain</title>
 </head>
 <body>
 
-<!-- SPLASH -->
-<div id="splash">
-  <div class="splash-logo">
-    <img src="assets/icon.png" alt="SmartLine"/>
-    <span>SmartLine</span>
-  </div>
-  <div class="splash-bar"><div class="splash-bar-fill"></div></div>
-</div>
-
-<!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <img src="assets/icon.png" alt="SmartLine"/>
-      <span class="nav-logo-txt">SmartLine</span>
-    </a>
+    <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="SmartLine"/></a>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="index.html">Accueil</a></li>
       <li><a href="conception.html">Conception</a></li>
       <li><a href="vision.html">Vision</a></li>
       <li><a href="equipe.html">Équipe</a></li>
@@ -46,7 +31,6 @@
   <a href="https://github.com/SmartLine-fr/SmartLine" target="_blank" class="mobile-drawer-btn">Voir sur GitHub →</a>
 </div>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
@@ -60,24 +44,22 @@
     </div>
     <div class="hero-img">
       <div class="hero-img-frame">
-        <img src="assets/prototype.jpg" alt="Prototype SmartLine" style="object-position:center 30%"/>
+        <img src="assets/prototype.jpg" alt="Prototype SmartLine"/>
       </div>
       <div class="hero-img-glow"></div>
       <div class="badge-f badge-f-a"><span class="bdot"></span>Système actif</div>
-      <div class="badge-f badge-f-b"><span class="bnum">+1</span>&nbsp;voie gagnée</div>
+      <div class="badge-f badge-f-b"><span class="bnum">+1</span> voie gagnée</div>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
 <div class="stats reveal">
-  <div class="stat"><div class="stat-n"><b>2</b></div><div class="stat-l">modules prototypes</div></div>
   <div class="stat"><div class="stat-n"><b>+1</b> voie</div><div class="stat-l">gagnée en temps réel</div></div>
   <div class="stat"><div class="stat-n">100<b>%</b></div><div class="stat-l">autonomie solaire</div></div>
-  <div class="stat"><div class="stat-n">IA<b>+</b></div><div class="stat-l">détection trafic</div></div>
+  <div class="stat"><div class="stat-n"><b>4</b></div><div class="stat-l">capteurs Arduino</div></div>
+  <div class="stat"><div class="stat-n">CO<b>₂</b></div><div class="stat-l">réduction des émissions</div></div>
 </div>
 
-<!-- FEATURES -->
 <section class="reveal">
   <div class="sec-wrap">
     <div class="eyebrow">Le projet</div>
@@ -85,16 +67,15 @@
     <p class="desc">SmartLine remplace les terre-pleins fixes par des blocs motorisés intelligents — une infrastructure qui s'adapte au trafic, pas l'inverse.</p>
     <div class="grid6">
       <div class="card"><div class="card-ico">◈</div><h3>Gestion dynamique</h3><p>Les blocs se déplacent selon la densité de trafic — une voie créée là où le besoin est réel, en temps réel.</p></div>
-      <div class="card"><div class="card-ico">◎</div><h3>Autonomie solaire</h3><p>Panneaux solaires intégrés au-dessus de chaque module pour un fonctionnement totalement autonome.</p></div>
+      <div class="card"><div class="card-ico">◎</div><h3>Autonomie solaire</h3><p>Panneaux solaires intégrés pour un fonctionnement totalement autonome sans dépendance au réseau.</p></div>
       <div class="card"><div class="card-ico">▲</div><h3>Transports collectifs</h3><p>Voies réservées créables à la demande pour améliorer la ponctualité des transports en commun.</p></div>
       <div class="card"><div class="card-ico">◇</div><h3>Réduction CO₂</h3><p>Moins de congestion = moins de ralentissements = moins d'émissions. Impact environnemental direct.</p></div>
-      <div class="card"><div class="card-ico">⊕</div><h3>Vision IA</h3><p>Caméra équipée d'IA pour détecter les perturbations trafic et déclencher la reconfiguration automatique.</p></div>
+      <div class="card"><div class="card-ico">⊕</div><h3>Application mobile</h3><p>Suivi en temps réel de l'état des voies et des données de trafic depuis une interface mobile.</p></div>
       <div class="card"><div class="card-ico">◉</div><h3>Sécurité routière</h3><p>Signalisation LED et supervision caméra pour garantir la sécurité lors de chaque reconfiguration.</p></div>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
 <section class="bg2 reveal">
   <div class="sec-wrap">
     <div class="eyebrow">Fonctionnement</div>
@@ -102,10 +83,10 @@
     <p class="desc">Un système en 4 étapes qui transforme un axe routier en infrastructure adaptative.</p>
     <div class="how-grid">
       <div class="steps">
-        <div class="step"><div class="step-n">01</div><div><h3>Détection du trafic</h3><p>Les 4 capteurs ultrasons de chaque module mesurent en continu la densité de véhicules dans chaque sens.</p></div></div>
-        <div class="step"><div class="step-n">02</div><div><h3>Analyse IA & Arduino</h3><p>La caméra IA et l'Arduino Mega analysent les flux. Si un déséquilibre est détecté, la reconfiguration est déclenchée.</p></div></div>
-        <div class="step"><div class="step-n">03</div><div><h3>Déplacement des modules</h3><p>Le moteur pas-à-pas abaisse le plateau via la vis sans fin. Les moteurs DC propulsent le module sur ses 4 roues.</p></div></div>
-        <div class="step"><div class="step-n">04</div><div><h3>Signalisation & verrouillage</h3><p>Les 2 LEDs de chaque module s'activent. Le plateau remonte pour verrouiller le module en position finale.</p></div></div>
+        <div class="step"><div class="step-n">01</div><div><h3>Détection du trafic</h3><p>Les capteurs ultrasons mesurent en continu la densité de véhicules dans chaque sens.</p></div></div>
+        <div class="step"><div class="step-n">02</div><div><h3>Analyse Arduino</h3><p>Le microcontrôleur compare les flux et décide si une reconfiguration est nécessaire.</p></div></div>
+        <div class="step"><div class="step-n">03</div><div><h3>Déplacement des blocs</h3><p>Les moteurs actionnent les blocs pour libérer une voie supplémentaire dans le sens chargé.</p></div></div>
+        <div class="step"><div class="step-n">04</div><div><h3>Signalisation & supervision</h3><p>Les LED s'activent, la caméra surveille et les données sont transmises à l'application.</p></div></div>
       </div>
       <div class="road-box">
         <div class="road-title">Visualisation · reconfiguration en cours</div>
@@ -127,7 +108,6 @@
   </div>
 </section>
 
-<!-- TEAM -->
 <section class="reveal">
   <div class="sec-wrap">
     <div class="eyebrow">L'équipe</div>
@@ -135,39 +115,46 @@
     <p class="desc">Terminales au lycée LaSalle Passy Buzenval — finalistes des Olympiades des Sciences de l'Ingénieur 2026.</p>
     <div class="team-grid">
       <div class="member"><div class="m-init">SC</div><h3>Samuel Caquelin</h3><div class="m-role">Prototypage</div><p>Conception maquette, mécanique des blocs & étude d'impact CO₂.</p></div>
-      <div class="member"><div class="m-init">MB</div><h3>Manech Blossier</h3><div class="m-role">Électronique</div><p>Arduino Mega, câblage, L298N, écrans LCD et bandeaux LED.</p></div>
-      <div class="member"><div class="m-init">YD</div><h3>Yvan Dabrowski</h3><div class="m-role">Ingénierie</div><p>Diagrammes SysML, supervision caméra IA & cohérence système.</p></div>
+      <div class="member"><div class="m-init">MB</div><h3>Manech Blossier</h3><div class="m-role">Électronique</div><p>Arduino, câblage, pilotage des écrans LCD et bandeaux LED.</p></div>
+      <div class="member"><div class="m-init">YD</div><h3>Yvan Dabrowski</h3><div class="m-role">Ingénierie</div><p>Diagrammes SysML, supervision caméra & cohérence du projet.</p></div>
       <div class="member"><div class="m-init">EB</div><h3>Edouard Baradat</h3><div class="m-role">Chef de projet</div><p>Code Arduino, application mobile & communication.</p></div>
     </div>
     <div style="text-align:center;margin-top:2.5rem"><a href="equipe.html" class="btn btn-s">Voir l'équipe complète</a></div>
   </div>
 </section>
 
-<!-- PARTNERS -->
 <section class="bg2 reveal">
   <div class="sec-wrap">
     <div class="eyebrow">Partenaires</div>
     <h2 class="title">Ils nous soutiennent</h2>
     <p class="desc">SmartLine bénéficie du soutien de professionnels reconnus de la mobilité et de l'innovation.</p>
-    <div class="partner-grid">
-      <div class="partner-card">
-        <div class="partner-logo-wrap"><img src="assets/brinect.png" alt="Brinect"/></div>
-        <div class="partner-name">Brinect SAS</div>
-        <div class="partner-type">Partenaire officiel</div>
-        <p class="partner-desc">Plateforme de visibilité digitale — partenaire officiel de SmartLine avec autorisation d'utilisation du logo signée.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:3rem">
+
+      <div style="background:#0e1120;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:2.5rem 2rem;display:flex;flex-direction:column;gap:1.25rem;transition:border-color 0.3s" onmouseover="this.style.borderColor='rgba(67,97,238,0.35)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'">
+        <img src="assets/brinect.png" alt="Brinect" style="height:48px;width:auto;object-fit:contain;object-position:left;border-radius:6px"/>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:0.95rem;margin-bottom:0.3rem">Brinect SAS</div>
+          <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#4361EE;margin-bottom:0.6rem">Partenaire officiel</div>
+          <p style="font-size:0.82rem;color:#68728f;line-height:1.7;font-weight:300">Plateforme de visibilité digitale — partenaire de SmartLine pour les supports de communication du projet.</p>
+        </div>
       </div>
-      <div class="partner-card">
-        <div class="partner-logo-wrap"><div style="font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;color:#fff;letter-spacing:-0.03em">Transdev</div></div>
-        <div class="partner-name">Transdev Group</div>
-        <div class="partner-type">Soutien institutionnel</div>
-        <p class="partner-desc">Acteur mondial de la mobilité — soutien de la Direction Innovation de Transdev pour renforcer la crédibilité du projet.</p>
+
+      <div style="background:#0e1120;border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:2.5rem 2rem;display:flex;flex-direction:column;gap:1.25rem;transition:border-color 0.3s" onmouseover="this.style.borderColor='rgba(67,97,238,0.35)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'">
+        <div style="height:48px;display:flex;align-items:center">
+          <div style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:#fff;letter-spacing:-0.02em">Transdev</div>
+        </div>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:0.95rem;margin-bottom:0.3rem">Transdev Group</div>
+          <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#4361EE;margin-bottom:0.6rem">Soutien institutionnel</div>
+          <p style="font-size:0.82rem;color:#68728f;line-height:1.7;font-weight:300">Acteur mondial de la mobilité — soutien de la Direction Innovation de Transdev pour renforcer la crédibilité du projet face au jury.</p>
+        </div>
       </div>
+
     </div>
-    <div style="text-align:center;margin-top:2rem"><a href="soutien.html" class="btn btn-s">En savoir plus sur nos partenaires</a></div>
   </div>
 </section>
 
-<!-- CTA -->
 <div class="cta-wrap reveal">
   <div class="cta-inner">
     <div class="eyebrow">OSI 2026</div>
@@ -180,11 +167,10 @@
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-top">
     <div>
-      <div class="footer-brand"><img src="assets/icon.png" alt="SmartLine"/><span class="footer-brand-txt">SmartLine</span></div>
+      <div class="footer-logo"><img src="assets/logo.png" alt="SmartLine"/></div>
       <div class="footer-tag">La route intelligente de demain · OSI 2026</div>
     </div>
     <div class="footer-links">
@@ -192,7 +178,6 @@
       <a href="conception.html">Conception</a>
       <a href="vision.html">Vision</a>
       <a href="equipe.html">Équipe</a>
-      <a href="soutien.html">Soutiens</a>
       <a href="https://github.com/SmartLine-fr/SmartLine" target="_blank">GitHub</a>
     </div>
   </div>
