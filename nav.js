@@ -1,5 +1,5 @@
 (function(){
-  // Splash screen — seulement à la première visite de la session
+  // Splash — uniquement à la première visite de la session
   var splash = document.getElementById('splash');
   if (splash) {
     if (!sessionStorage.getItem('splashShown')) {
