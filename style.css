@@ -67,7 +67,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; height: 62px; ba
 .hero-btns { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; animation: fadeUp 0.9s 0.3s ease both; }
 .hero-img { margin-top: 4rem; position: relative; width: 100%; max-width: 1000px; animation: fadeUp 0.9s 0.4s ease both; }
 .hero-img-frame { border-radius: 16px; overflow: hidden; border: 1px solid rgba(67,97,238,0.18); position: relative; }
-.hero-img-frame img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; object-position: center 85%; }
+.hero-img-frame img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; object-position: center 55%; }
 .hero-img-frame::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 55%, #06080f 100%); }
 .hero-img-glow { position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); width: 50%; height: 90px; background: #4361EE; filter: blur(80px); opacity: 0.15; border-radius: 50%; z-index: -1; }
 .badge-f { position: absolute; background: rgba(10,13,24,0.94); border: 1px solid rgba(67,97,238,0.3); backdrop-filter: blur(12px); border-radius: 10px; padding: 9px 13px; display: flex; align-items: center; gap: 8px; font-size: 0.72rem; font-weight: 600; color: #dde3ff; z-index: 10; animation: floatY 4s ease-in-out infinite; }
