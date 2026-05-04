@@ -136,6 +136,7 @@ SmartLine/
 │   └── app_mobile/         ← Application mobile React Native
 │
 ├── Documentation/
+│   ├── SmartLine_Cahier_des_Charges_2025-2026.pdf
 │   ├── sysml/              ← Diagrammes SysML
 │   └── excel/
 │
@@ -157,7 +158,7 @@ Projet réalisé par 4 élèves de Terminale au lycée **LaSalle Passy Buzenval*
 |---|---|---|
 | **Samuel Caquelin** | Responsable prototypage | Conception maquette, mécanique des blocs, étude impact CO₂ |
 | **Manech Blossier** | Responsable électronique | Arduino, câblage, écrans LCD et bandeaux LED |
-| **Yvan Dabrowski** | Responsable ingénierie | Diagrammes SysML, supervision caméra, cohérence système |
+| **Yvan Dabrowski** | Responsable ingénierie | Diagrammes SysML, code de la route & signalisation, supervision caméra |
 | **Edouard Baradat** | Chef de projet | Code Arduino, application mobile, communication |
 
 ---
